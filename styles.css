@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", verdana, georgia, sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  padding-top: 6rem;
+}
+
+header h1 {
+  font-weight: bolder;
+}
+
+#header-text {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+header #download-button {
+  background-color: #4b95a9;
+  margin-right: 8px;
+}
+
+header #header-text #what-download {
+  background-color: #8261b1;
+}
+
+button {
+  color: #fff;
+  border-style: none;
+  padding: 1rem 1.5rem;
+  border-radius: 5rem;
+}
+
+#download-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.pendulum {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.pendulum .vertical-line {
+  height: 50px;
+  width: 0;
+  border-right: 1px solid gray;
+  margin: auto;
+}
+
+span {
+  border: 1px solid gray;
+  border-radius: 5rem;
+  padding: 2px 5px;
+  color: gray;
+}
+
+.number {
+  margin-top: 2px;
+}
+
+.horizontal-break {
+  display: none;
+}
+
+#images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 5rem;
+  column-gap: 14px;
+}
+
+#images img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+main {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+main h5 {
+  text-transform: uppercase;
+  color: #4b95a9;
+  letter-spacing: 5px;
+}
+
+main p {
+  padding: 0 23rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 850px 200px;
+  text-align: center;
+  padding: 3rem;
+  color: #fff;
+  border: 1px solid rgb(75, 149, 169);
+  background-image: linear-gradient(
+      rgba(72, 146, 166, 0.8),
+      rgba(72, 146, 166, 0.6)
+    ),
+    url(./assets/desktop/image-footer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer p {
+  padding: 0 6rem;
+}
+
+footer button {
+  background-color: #8261b1;
+  padding: 1rem;
+}
+
+@media (max-width: 576px) {
+  /* Style rules */
+
+  header img {
+    display: none;
+  }
+
+  header button {
+    display: block;
+    margin: auto;
+  }
+
+  header #download-button {
+    margin: 0;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  header #what-download {
+    padding: 1rem 2.7rem;
+  }
+
+  .pendulum {
+    display: none;
+  }
+
+  .horizontal-break {
+    display: flex;
+    margin: 3rem 0;
+  }
+
+  .horizontal-line {
+    width: 35%;
+    height: 0;
+    border-top: 1px solid gray;
+    margin: auto;
+  }
+
+  #images {
+    display: block;
+    padding: 0 2rem;
+  }
+
+  #images img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+  }
+
+  main p {
+    padding: 0 2rem;
+  }
+
+  footer {
+    background-image: linear-gradient(
+        rgba(72, 146, 166, 0.8),
+        rgba(72, 146, 166, 0.6)
+      ),
+      url(./assets/mobile/image-footer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    padding: 1rem;
+  }
+
+  footer p {
+    padding: 0 2rem 1rem;
+  }
+}
